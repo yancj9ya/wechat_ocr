@@ -1,8 +1,8 @@
 import wcocr  # type: ignore
 import os
 
-wx_dir = r"wx"
-ocr_dir = r"ocr\WeChatOCR.exe"
+wx_dir = r"ver4\wx"
+ocr_dir = r"ver4\ocr\wxocr.dll"
 # 获取当前目录
 current_file_dir = os.path.dirname(os.path.realpath(__file__))
 # 拼接路径
@@ -37,6 +37,6 @@ class WxOcr:
 
 if __name__ == "__main__":
     wx_ocr = WxOcr()
-    img_path = os.path.join(current_file_dir, "1.png")
+    img_path = os.path.join(current_file_dir, "6.png")
     result = wx_ocr.get_ocr_result(img_path)
     print(result)
